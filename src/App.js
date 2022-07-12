@@ -72,6 +72,16 @@ export default function App() {
               Next
             </button>
           ) : null}
+
+          {state !== 1 ? (
+            <button
+              onClick={() => {
+                newState(1);
+              }}
+            >
+              Re-Start
+            </button>
+          ) : null}
         </div>
       </div>
     </div>
